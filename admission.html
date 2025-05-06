@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Набор учащихся - Детская школа искусств "Гармония"</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Логотип школы искусств">
+                <h1>Гармония</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="activities.html">Деятельность</a></li>
+                    <li><a href="team.html">Коллектив</a></li>
+                    <li class="active"><a href="admission.html">Набор</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="login.html" class="login-btn">Войти</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li>Набор учащихся</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Условия приема -->
+    <section class="admission-conditions">
+        <div class="container">
+            <h2 class="section-title">Условия приема</h2>
+            <div class="conditions-grid">
+                <div class="condition-card">
+                    <div class="condition-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Возрастные группы</h3>
+                    <ul>
+                        <li><strong>3-6 лет</strong> - группы раннего развития</li>
+                        <li><strong>7-9 лет</strong> - подготовительные группы</li>
+                        <li><strong>10-12 лет</strong> - основные группы</li>
+                        <li><strong>13-18 лет</strong> - углубленное обучение</li>
+                    </ul>
+                </div>
+                <div class="condition-card">
+                    <div class="condition-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Требования к поступающим</h3>
+                    <ul>
+                        <li>Желание обучаться и развиваться</li>
+                        <li>Для музыкального отделения - прослушивание</li>
+                        <li>Для художественного отделения - просмотр работ</li>
+                        <li>Для хореографии - проверка физических данных</li>
+                        <li>Для театрального - творческое испытание</li>
+                    </ul>
+                </div>
+                <div class="condition-card">
+                    <div class="condition-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Сроки обучения</h3>
+                    <ul>
+                        <li><strong>Раннее развитие</strong> - 1-2 года</li>
+                        <li><strong>Подготовительное</strong> - 2-3 года</li>
+                        <li><strong>Основное</strong> - 5-7 лет</li>
+                        <li><strong>Профессиональная ориентация</strong> - 2-3 года</li>
+                    </ul>
+                </div>
+                <div class="condition-card">
+                    <div class="condition-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Особые условия</h3>
+                    <ul>
+                        <li>Возможность обучения на нескольких отделениях</li>
+                        <li>Индивидуальный график для одаренных детей</li>
+                        <li>Льготы для многодетных семей</li>
+                        <li>Бесплатные места для победителей конкурсов</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="admission-notice">
+                <div class="notice-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <p>Прием в школу осуществляется на конкурсной основе. Основные критерии отбора - наличие способностей и мотивация к обучению. Отсутствие подготовки не является препятствием для поступления в подготовительные группы.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Необходимые документы -->
+    <section class="required-documents">
+        <div class="container">
+            <h2 class="section-title">Необходимые документы</h2>
+            <div class="documents-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Заявление</h3>
+                    <p>Заполненное заявление о приеме (бланк можно скачать ниже или получить в школе)</p>
+                    <a href="docs/application.pdf" class="btn btn-small" download><i class="fas fa-download"></i> Скачать бланк</a>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Документы ребенка</h3>
+                    <ul>
+                        <li>Копия свидетельства о рождении</li>
+                        <li>Копия паспорта (для детей старше 14 лет)</li>
+                        <li>Медицинская справка об отсутствии противопоказаний</li>
+                        <li>2 фото 3×4 см</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Документы родителя</h3>
+                    <ul>
+                        <li>Копия паспорта родителя</li>
+                        <li>Копия СНИЛС ребенка</li>
+                        <li>Для льготных категорий - подтверждающие документы</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Творческие материалы</h3>
+                    <p>Для поступающих не в подготовительные группы:</p>
+                    <ul>
+                        <li>Музыкальное отделение - видео с исполнением</li>
+                        <li>Художественное - портфолио 5-10 работ</li>
+                        <li>Хореографическое - видео с танцем</li>
+                        <li>Театральное - видео с монологом</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="documents-notice">
+                <p><strong>Важно:</strong> Оригиналы документов предоставляются при зачислении. Документы можно подать лично в школе или отправить сканы на email: <a href="mailto:admission@garmoniya-school.ru">admission@garmoniya-school.ru</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Расписание вступительных испытаний -->
+    <section class="admission-schedule">
+        <div class="container">
+            <h2 class="section-title">Расписание вступительных прослушиваний/просмотров</h2>
+            <div class="schedule-tabs">
+                <button class="schedule-tab active" data-month="june">Июнь</button>
+                <button class="schedule-tab" data-month="july">Июль</button>
+                <button class="schedule-tab" data-month="august">Август</button>
+                <button class="schedule-tab" data-month="september">Сентябрь</button>
+            </div>
+            <div class="schedule-content active" id="schedule-june">
+                <div class="schedule-table">
+                    <div class="schedule-row header">
+                        <div class="schedule-date">Дата</div>
+                        <div class="schedule-time">Время</div>
+                        <div class="schedule-direction">Направление</div>
+                        <div class="schedule-age">Возраст</div>
+                        <div class="schedule-place">Место</div>
+                        <div class="schedule-action"></div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-date">15 июня</div>
+                        <div class="schedule-time">10:00-12:00</div>
+                        <div class="schedule-direction">Фортепиано, скрипка</div>
+                        <div class="schedule-age">7-9 лет</div>
+                        <div class="schedule-place">Каб. 201</div>
+                        <div class="schedule-action"><a href="#" class="btn btn-small">Записаться</a></div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-date">15 июня</div>
+                        <div class="schedule-time">14:00-16:00</div>
+                        <div class="schedule-direction">Живопись, графика</div>
+                        <div class="schedule-age">10-12 лет</div>
+                        <div class="schedule-place">Каб. 305</div>
+                        <div class="schedule-action"><a href="#" class="btn btn-small">Записаться</a></div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-date">20 июня</div>
+                        <div class="schedule-time">11:00-13:00</div>
+                        <div class="schedule-direction">Хореография</div>
+                        <div class="schedule-age">7-9 лет</div>
+                        <div class="schedule-place">Зал 2</div>
+                        <div class="schedule-action"><a href="#" class="btn btn-small">Записаться</a></div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-date">25 июня</div>
+                        <div class="schedule-time">10:00-14:00</div>
+                        <div class="schedule-direction">Раннее развитие</div>
+                        <div class="schedule-age">3-6 лет</div>
+                        <div class="schedule-place">Каб. 101</div>
+                        <div class="schedule-action"><a href="#" class="btn btn-small">Записаться</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule-content" id="schedule-july">
+                <!-- Аналогичное содержимое для июля -->
+            </div>
+            <div class="schedule-notice">
+                <p><strong>Примечание:</strong> Для участия в прослушивании необходимо предварительно записаться. При себе иметь сменную обувь и необходимые материалы (для художников - бумагу и карандаши, для музыкантов - ноты и т.д.)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Стоимость обучения -->
+    <section class="tuition-fees">
+        <div class="container">
+            <h2 class="section-title">Стоимость обучения</h2>
+            <div class="pricing-tabs">
+                <button class="pricing-tab active" data-program="basic">Основные программы</button>
+                <button class="pricing-tab" data-program="early">Раннее развитие</button>
+                <button class="pricing-tab" data-program="intensive">Интенсивные курсы</button>
+                <button class="pricing-tab" data-program="individual">Индивидуальные занятия</button>
+            </div>
+            <div class="pricing-content active" id="pricing-basic">
+                <div class="pricing-table">
+                    <div class="pricing-row header">
+                        <div class="pricing-direction">Направление</div>
+                        <div class="pricing-age">Возраст</div>
+                        <div class="pricing-hours">Часов в неделю</div>
+                        <div class="pricing-cost">Стоимость в месяц</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="pricing-direction">Фортепиано</div>
+                        <div class="pricing-age">7-18 лет</div>
+                        <div class="pricing-hours">2 (инд.) + 2 (анс.)</div>
+                        <div class="pricing-cost">8 500 ₽</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="pricing-direction">Скрипка</div>
+                        <div class="pricing-age">7-18 лет</div>
+                        <div class="pricing-hours">2 (инд.) + 2 (анс.)</div>
+                        <div class="pricing-cost">9 000 ₽</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="pricing-direction">Живопись</div>
+                        <div class="pricing-age">7-18 лет</div>
+                        <div class="pricing-hours">4 (груп.)</div>
+                        <div class="pricing-cost">6 000 ₽</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="pricing-direction">Хореография</div>
+                        <div class="pricing-age">7-18 лет</div>
+                        <div class="pricing-hours">3 (груп.)</div>
+                        <div class="pricing-cost">5 500 ₽</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-notice">
+                <div class="notice-box">
+                    <h3>Скидки и льготы</h3>
+                    <ul>
+                        <li>10% - на второго ребенка из семьи</li>
+                        <li>15% - при оплате за триместр</li>
+                        <li>20% - при оплате за год</li>
+                        <li>30% - для многодетных семей</li>
+                    </ul>
+                </div>
+                <div class="notice-box">
+                    <h3>Оплата</h3>
+                    <ul>
+                        <li>Оплата производится до 10 числа каждого месяца</li>
+                        <li>Доступна оплата картой, переводом или наличными</li>
+                        <li>Возможность оформления налогового вычета</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ для родителей -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>С какого возраста можно поступать в школу?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Мы принимаем детей с 3 лет в группы раннего развития. Для детей 3-6 лет программа включает общее музыкальное и художественное развитие, ритмику, знакомство с инструментами в игровой форме.</p>
+                        <p>С 7 лет начинается обучение по специализированным программам с выбором основного направления.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Нужно ли иметь свой инструмент для занятий?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Для занятий в школе инструменты предоставляются. Однако для домашних занятий необходимо будет приобрести инструмент (кроме фортепиано и ударных).</p>
+                        <p>Мы можем порекомендовать где и какой инструмент лучше приобрести, а также помочь с выбором подходящей модели для начинающих.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Можно ли обучаться на нескольких отделениях?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, многие наши ученики совмещают занятия на разных отделениях. Например, можно обучаться игре на фортепиано и одновременно посещать занятия по живописи или хореографии.</p>
+                        <p>При этом предоставляется скидка 15% на второе направление обучения.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Как проходит учебный процесс?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Учебный год длится с сентября по май. Занятия проходят во второй половине дня после общеобразовательной школы.</p>
+                        <p>Программа включает:</p>
+                        <ul>
+                            <li>Основной предмет (инструмент, живопись, танец и т.д.)</li>
+                            <li>Теоретические дисциплины (сольфеджио, история искусств)</li>
+                            <li>Ансамблевые/групповые занятия</li>
+                            <li>Концертную и выставочную практику</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Есть ли возможность перевода из другой школы?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, мы принимаем учащихся из других школ искусств. Для перевода необходимо:</p>
+                        <ol>
+                            <li>Подать заявление о переводе</li>
+                            <li>Предоставить справку об обучении из предыдущей школы</li>
+                            <li>Пройди прослушивание/просмотр для определения уровня</li>
+                        </ol>
+                        <p>Перевод возможен в течение всего учебного года при наличии свободных мест.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Какие документы выдаются после окончания?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>После успешного завершения полного курса обучения выдается:</p>
+                        <ul>
+                            <li>Свидетельство об окончании школы установленного образца</li>
+                            <li>Выписка с оценками по всем предметам</li>
+                            <li>Рекомендательное письмо для поступления в профильные учебные заведения (для выпускников)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-contact">
+                <p>Не нашли ответ на свой вопрос? Задайте его нам:</p>
+                <a href="contacts.html" class="btn">Написать сообщение</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма записи на прослушивание -->
+    <section class="audition-form-section" id="audition-form">
+        <!-- остальной код формы -->
+    </section>
+        <div class="container">
+            <div class="audition-form">
+                <h2>Записаться на прослушивание</h2>
+                <form id="auditionForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="ФИО родителя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Телефон" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="ФИО ребенка" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Возраст ребенка" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Выберите направление</option>
+                                <option>Музыкальное отделение</option>
+                                <option>Художественное отделение</option>
+                                <option>Хореографическое отделение</option>
+                                <option>Театральное отделение</option>
+                                <option>Раннее развитие</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" placeholder="Предпочтительная дата">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Комментарии и пожелания" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required> Я согласен(а) на обработку персональных данных
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="img/logo.jpg" alt="Логотип школы искусств">
+                        <h3>Гармония</h3>
+                    </div>
+                    <p>Детская школа искусств для детей от 4 до 16 лет. Развиваем творческие способности с 2010 года.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Творческая, 15</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@garmoniya-school.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-20:00, Сб: 10:00-18:00</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="activities.html">Деятельность</a></li>
+                        <li><a href="team.html">Коллектив</a></li>
+                        <li><a href="admission.html">Набор</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Подписаться на новости</h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p>Будьте в курсе наших мероприятий и новостей.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Детская школа искусств "Гармония". Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

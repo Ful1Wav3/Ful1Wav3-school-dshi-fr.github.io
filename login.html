@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Детская школа искусств "Гармония"</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Логотип школы искусств">
+                <h1>Гармония</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="activities.html">Деятельность</a></li>
+                    <li><a href="team.html">Коллектив</a></li>
+                    <li><a href="admission.html">Набор</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li class="active"><a href="account.html" class="login-btn">Мой кабинет</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li>Личный кабинет</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Личный кабинет -->
+    <section class="account-section">
+        <div class="container">
+            <div class="account-tabs">
+                <button class="account-tab active" data-tab="schedule">Расписание</button>
+                <button class="account-tab" data-tab="progress">Успеваемость</button>
+                <button class="account-tab" data-tab="payments">Оплата</button>
+                <button class="account-tab" data-tab="messages">Сообщения</button>
+                <button class="account-tab" data-tab="profile">Профиль</button>
+                <button class="account-tab teacher-only" data-tab="journal">Журнал</button>
+                <button class="account-tab teacher-only" data-tab="materials">Материалы</button>
+            </div>
+            
+            <div class="account-content">
+                <!-- Расписание -->
+                <div class="tab-content active" id="tab-schedule">
+                    <div class="schedule-controls">
+                        <button class="btn btn-small" id="prev-week"><i class="fas fa-chevron-left"></i></button>
+                        <h3 id="current-week">Неделя 12-18 июня 2023</h3>
+                        <button class="btn btn-small" id="next-week"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="schedule-week">
+                        <div class="schedule-day">
+                            <div class="day-header">Понедельник<br>12 июня</div>
+                            <div class="day-lessons">
+                                <div class="lesson">
+                                    <div class="lesson-time">15:00-16:00</div>
+                                    <div class="lesson-info">
+                                        <h4>Фортепиано</h4>
+                                        <p>Преп. Иванова М.С.</p>
+                                        <p class="lesson-room">Каб. 201</p>
+                                    </div>
+                                </div>
+                                <div class="lesson">
+                                    <div class="lesson-time">16:30-17:30</div>
+                                    <div class="lesson-info">
+                                        <h4>Сольфеджио</h4>
+                                        <p>Преп. Петров А.В.</p>
+                                        <p class="lesson-room">Каб. 105</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-day">
+                            <div class="day-header">Среда<br>14 июня</div>
+                            <div class="day-lessons">
+                                <div class="lesson">
+                                    <div class="lesson-time">14:00-15:30</div>
+                                    <div class="lesson-info">
+                                        <h4>Фортепиано</h4>
+                                        <p>Преп. Иванова М.С.</p>
+                                        <p class="lesson-room">Каб. 201</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Остальные дни недели -->
+                    </div>
+                    <div class="online-lesson-notice">
+                        <h4>Ближайшее онлайн-занятие:</h4>
+                        <div class="online-lesson">
+                            <div class="online-time">15 июня, 18:00-19:00</div>
+                            <div class="online-info">
+                                <h5>Фортепиано - индивидуальное</h5>
+                                <p>Ссылка для подключения будет доступна за 15 минут до начала</p>
+                                <a href="#" class="btn btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Успеваемость -->
+                <div class="tab-content" id="tab-progress">
+                    <h3>Успеваемость</h3>
+                    <div class="progress-grid">
+                        <div class="progress-card">
+                            <h4>Фортепиано</h4>
+                            <div class="progress-teacher">Преп. Иванова М.С.</div>
+                            <div class="progress-grades">
+                                <div class="grade">
+                                    <span class="grade-date">10.05.2023</span>
+                                    <span class="grade-value">5</span>
+                                </div>
+                                <div class="grade">
+                                    <span class="grade-date">24.04.2023</span>
+                                    <span class="grade-value">4+</span>
+                                </div>
+                                <!-- Другие оценки -->
+                            </div>
+                            <div class="progress-average">
+                                Средний балл: <strong>4.8</strong>
+                            </div>
+                        </div>
+                        <!-- Другие предметы -->
+                    </div>
+                    <div class="progress-comments">
+                        <h4>Комментарии преподавателей</h4>
+                        <div class="comment">
+                            <div class="comment-teacher">Иванова М.С. (Фортепиано)</div>
+                            <div class="comment-date">15.05.2023</div>
+                            <div class="comment-text">
+                                <p>Отличный прогресс в изучении этюда Черни. Обратить внимание на ровность звукоизвлечения в быстрых пассажах.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Оплата -->
+                <div class="tab-content" id="tab-payments">
+                    <h3>Оплата обучения</h3>
+                    <div class="payment-status">
+                        <div class="status-card paid">
+                            <h4>Июнь 2023</h4>
+                            <div class="status-amount">8 500 ₽</div>
+                            <div class="status-date">Оплачено 01.06.2023</div>
+                            <button class="btn btn-small">Квитанция</button>
+                        </div>
+                        <div class="status-card upcoming">
+                            <h4>Июль 2023</h4>
+                            <div class="status-amount">8 500 ₽</div>
+                            <div class="status-date">К оплате до 10.07.2023</div>
+                            <button class="btn btn-small">Оплатить</button>
+                        </div>
+                    </div>
+                    <div class="payment-history">
+                        <h4>История платежей</h4>
+                        <table class="history-table">
+                            <thead>
+                                <tr>
+                                    <th>Месяц</th>
+                                    <th>Сумма</th>
+                                    <th>Дата оплаты</th>
+                                    <th>Статус</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Май 2023</td>
+                                    <td>8 500 ₽</td>
+                                    <td>02.05.2023</td>
+                                    <td><span class="status-badge paid">Оплачено</span></td>
+                                    <td><a href="#">Квитанция</a></td>
+                                </tr>
+                                <!-- Другие платежи -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Сообщения -->
+                <div class="tab-content" id="tab-messages">
+                    <h3>Сообщения</h3>
+                    <div class="messages-container">
+                        <div class="messages-sidebar">
+                            <div class="message-contact active">
+                                <div class="contact-avatar">
+                                    <img src="images/teacher1.jpg" alt="Иванова М.С.">
+                                </div>
+                                <div class="contact-info">
+                                    <h4>Иванова М.С.</h4>
+                                    <p class="contact-preview">Напоминаю о необходимости...</p>
+                                    <p class="contact-time">15:30, 10.06</p>
+                                </div>
+                            </div>
+                            <!-- Другие контакты -->
+                        </div>
+                        <div class="messages-content">
+                            <div class="message-header">
+                                <div class="message-teacher">
+                                    <img src="images/teacher1.jpg" alt="Иванова М.С.">
+                                    <h4>Иванова Мария Сергеевна</h4>
+                                </div>
+                            </div>
+                            <div class="messages-list">
+                                <div class="message received">
+                                    <div class="message-text">
+                                        <p>Добрый день! Напоминаю, что завтра в 15:00 у нас занятие по фортепиано. Пожалуйста, подготовьте этюд Черни №5 и сонатину Клементи.</p>
+                                    </div>
+                                    <div class="message-time">10.06.2023, 15:30</div>
+                                </div>
+                                <div class="message sent">
+                                    <div class="message-text">
+                                        <p>Добрый день, Мария Сергеевна! Спасибо за напоминание. Все подготовлю.</p>
+                                    </div>
+                                    <div class="message-time">10.06.2023, 16:45</div>
+                                </div>
+                            </div>
+                            <div class="message-input">
+                                <textarea placeholder="Напишите сообщение..."></textarea>
+                                <button class="btn btn-small">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Журнал (для преподавателей) -->
+                <div class="tab-content" id="tab-journal">
+                    <h3>Журнал успеваемости</h3>
+                    <div class="journal-controls">
+                        <select class="group-select">
+                            <option>Фортепиано, группа 1 (7-9 лет)</option>
+                            <option>Фортепиано, группа 2 (10-12 лет)</option>
+                        </select>
+                        <button class="btn btn-small">Добавить оценку</button>
+                    </div>
+                    <table class="journal-table">
+                        <thead>
+                            <tr>
+                                <th>Ученик</th>
+                                <th>10.05</th>
+                                <th>24.05</th>
+                                <th>07.06</th>
+                                <th>Средний балл</th>
+                                <th>Комментарии</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Смирнова Анна</td>
+                                <td>5</td>
+                                <td>4+</td>
+                                <td>5</td>
+                                <td>4.8</td>
+                                <td><button class="btn-comment">Добавить</button></td>
+                            </tr>
+                            <!-- Другие ученики -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Учебные материалы (для преподавателей) -->
+                <div class="tab-content" id="tab-materials">
+                    <h3>Учебные материалы</h3>
+                    <div class="materials-upload">
+                        <h4>Загрузить новый материал</h4>
+                        <div class="upload-form">
+                            <input type="text" placeholder="Название материала">
+                            <select>
+                                <option>Выберите группу</option>
+                                <option>Фортепиано, группа 1</option>
+                                <option>Фортепиано, группа 2</option>
+                            </select>
+                            <label class="file-upload">
+                                <input type="file" multiple>
+                                <span>Выберите файлы</span>
+                            </label>
+                            <button class="btn">Загрузить</button>
+                        </div>
+                    </div>
+                    <div class="materials-list">
+                        <div class="material-card">
+                            <div class="material-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="material-info">
+                                <h4>Этюды Черни для начинающих</h4>
+                                <div class="material-meta">
+                                    <span>Фортепиано, группа 1</span>
+                                    <span>Загружено: 15.05.2023</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="btn-icon"><i class="fas fa-download"></i></button>
+                                <button class="btn-icon"><i class="fas fa-share-alt"></i></button>
+                                <button class="btn-icon"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+                        <!-- Другие материалы -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="img/logo.jpg" alt="Логотип школы искусств">
+                        <h3>Гармония</h3>
+                    </div>
+                    <p>Детская школа искусств для детей от 4 до 16 лет. Развиваем творческие способности с 2010 года.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Творческая, 15</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@garmoniya-school.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-20:00, Сб: 10:00-18:00</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="activities.html">Деятельность</a></li>
+                        <li><a href="team.html">Коллектив</a></li>
+                        <li><a href="admission.html">Набор</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Подписаться на новости</h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p>Будьте в курсе наших мероприятий и новостей.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Детская школа искусств "Гармония". Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>

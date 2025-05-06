@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коллектив - Детская школа искусств "Гармония"</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Логотип школы искусств">
+                <h1>Гармония</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="activities.html">Деятельность</a></li>
+                    <li class="active"><a href="team.html">Коллектив</a></li>
+                    <li><a href="admission.html">Набор</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="login.html" class="login-btn">Войти</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li>Коллектив</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Преподаватели по направлениям -->
+    <section class="teachers-section">
+        <div class="container">
+            <h2 class="section-title">Наши преподаватели</h2>
+            <div class="direction-tabs">
+                <button class="direction-tab active" data-direction="all">Все</button>
+                <button class="direction-tab" data-direction="music">Музыкальное</button>
+                <button class="direction-tab" data-direction="art">Художественное</button>
+                <button class="direction-tab" data-direction="dance">Хореографическое</button>
+                <button class="direction-tab" data-direction="theater">Театральное</button>
+                <button class="direction-tab" data-direction="preschool">Раннее развитие</button>
+            </div>
+            <div class="teachers-grid">
+                <!-- Музыкальное отделение -->
+                <div class="teacher-card" data-direction="music">
+                    <div class="teacher-photo">
+                        <img src="img/teach1.jpg" alt="Иванова Мария Сергеевна">
+                        <div class="teacher-direction">Фортепиано</div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Иванова Мария Сергеевна</h3>
+                        <p class="teacher-position">Преподаватель высшей категории</p>
+                        <p class="teacher-experience">Стаж: 15 лет</p>
+                        <p class="teacher-bio">Окончила Московскую консерваторию. Лауреат международных конкурсов. Автор методики раннего музыкального развития.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="teacher-card" data-direction="music">
+                    <div class="teacher-photo">
+                        <img src="images/teacher2.jpg" alt="Петров Алексей Владимирович">
+                        <div class="teacher-direction">Скрипка</div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Петров Алексей Владимирович</h3>
+                        <p class="teacher-position">Преподаватель первой категории</p>
+                        <p class="teacher-experience">Стаж: 8 лет</p>
+                        <p class="teacher-bio">Выпускник Санкт-Петербургской консерватории. Концертмейстер городского симфонического оркестра.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="teacher-card" data-direction="music">
+                    <div class="teacher-photo">
+                        <img src="images/teacher3.jpg" alt="Смирнова Елена Дмитриевна">
+                        <div class="teacher-direction">Вокал</div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Смирнова Елена Дмитриевна</h3>
+                        <p class="teacher-position">Преподаватель высшей категории</p>
+                        <p class="teacher-experience">Стаж: 12 лет</p>
+                        <p class="teacher-bio">Солистка оперного театра. Обладатель премии "Золотой голос России". Специалист по постановке голоса.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Художественное отделение -->
+                <div class="teacher-card" data-direction="art">
+                    <div class="teacher-photo">
+                        <img src="images/teacher4.jpg" alt="Кузнецова Анна Викторовна">
+                        <div class="teacher-direction">Живопись</div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Кузнецова Анна Викторовна</h3>
+                        <p class="teacher-position">Преподаватель высшей категории</p>
+                        <p class="teacher-experience">Стаж: 10 лет</p>
+                        <p class="teacher-bio">Член Союза художников России. Участник международных выставок. Специалист по акварельной живописи.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="teacher-card" data-direction="art">
+                    <div class="teacher-photo">
+                        <img src="images/teacher5.jpg" alt="Волков Дмитрий Игоревич">
+                        <div class="teacher-direction">Графика</div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Волков Дмитрий Игоревич</h3>
+                        <p class="teacher-position">Преподаватель</p>
+                        <p class="teacher-experience">Стаж: 5 лет</p>
+                        <p class="teacher-bio">Выпускник Академии художеств. Специалист по академическому рисунку и цифровой графике.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Хореографическое отделение -->
+                <div class="teacher-card" data-direction="dance">
+                    <div class="teacher-photo">
+                        <img src="images/teacher6.jpg" alt="Николаева Ольга Петровна">
+                        <div class="teacher-direction">Классический танец</div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Николаева Ольга Петровна</h3>
+                        <p class="teacher-position">Преподаватель высшей категории</p>
+                        <p class="teacher-experience">Стаж: 20 лет</p>
+                        <p class="teacher-bio">Бывшая солистка Большого театра. Педагог-репетитор детских балетных спектаклей.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="teacher-card" data-direction="dance">
+                    <div class="teacher-photo">
+                        <img src="images/teacher7.jpg" alt="Козлов Артем Сергеевич">
+                        <div class="teacher-direction">Современный танец</div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Козлов Артем Сергеевич</h3>
+                        <p class="teacher-position">Преподаватель</p>
+                        <p class="teacher-experience">Стаж: 7 лет</p>
+                        <p class="teacher-bio">Чемпион России по contemporary dance. Участник международных танцевальных проектов.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Театральное отделение -->
+                <div class="teacher-card" data-direction="theater">
+                    <div class="teacher-photo">
+                        <img src="images/teacher8.jpg" alt="Борисов Иван Алексеевич">
+                        <div class="teacher-direction">Актерское мастерство</div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Борисов Иван Алексеевич</h3>
+                        <p class="teacher-position">Преподаватель первой категории</p>
+                        <p class="teacher-experience">Стаж: 9 лет</p>
+                        <p class="teacher-bio">Актер драматического театра. Режиссер детских спектаклей. Специалист по сценической речи.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Раннее развитие -->
+                <div class="teacher-card" data-direction="preschool">
+                    <div class="teacher-photo">
+                        <img src="images/teacher9.jpg" alt="Соколова Татьяна Михайловна">
+                        <div class="teacher-direction">Музыка для малышей</div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Соколова Татьяна Михайловна</h3>
+                        <p class="teacher-position">Преподаватель высшей категории</p>
+                        <p class="teacher-experience">Стаж: 14 лет</p>
+                        <p class="teacher-bio">Специалист по раннему музыкальному развитию. Автор программы "Музыкальная азбука".</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="teacher-card" data-direction="preschool">
+                    <div class="teacher-photo">
+                        <img src="images/teacher10.jpg" alt="Морозова Людмила Викторовна">
+                        <div class="teacher-direction">Творческая мастерская</div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Морозова Людмила Викторовна</h3>
+                        <p class="teacher-position">Преподаватель</p>
+                        <p class="teacher-experience">Стаж: 6 лет</p>
+                        <p class="teacher-bio">Психолог, арт-терапевт. Специалист по развитию креативности у дошкольников.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Администрация школы -->
+    <section class="administration">
+        <div class="container">
+            <h2 class="section-title">Администрация школы</h2>
+            <div class="admin-grid">
+                <div class="admin-card">
+                    <div class="admin-photo">
+                        <img src="images/director.jpg" alt="Сергеева Ирина Владимировна">
+                    </div>
+                    <div class="admin-info">
+                        <h3>Сергеева Ирина Владимировна</h3>
+                        <p class="admin-position">Директор школы</p>
+                        <p class="admin-experience">Стаж: 25 лет</p>
+                        <p class="admin-bio">Заслуженный работник культуры РФ. Кандидат педагогических наук. Основатель и бессменный руководитель школы "Гармония" с 2010 года.</p>
+                        <p class="admin-contacts">
+                            <i class="fas fa-envelope"></i> director@garmoniya-school.ru<br>
+                            <i class="fas fa-phone"></i> +7 (495) 123-45-67 (доб. 101)
+                        </p>
+                    </div>
+                </div>
+                <div class="admin-card">
+                    <div class="admin-photo">
+                        <img src="images/zam1.jpg" alt="Ковалев Андрей Николаевич">
+                    </div>
+                    <div class="admin-info">
+                        <h3>Ковалев Андрей Николаевич</h3>
+                        <p class="admin-position">Заместитель директора по учебной работе</p>
+                        <p class="admin-experience">Стаж: 18 лет</p>
+                        <p class="admin-bio">Координатор образовательных программ. Организатор конкурсов и фестивалей. Специалист по методической работе.</p>
+                        <p class="admin-contacts">
+                            <i class="fas fa-envelope"></i> uchmetod@garmoniya-school.ru<br>
+                            <i class="fas fa-phone"></i> +7 (495) 123-45-67 (доб. 102)
+                        </p>
+                    </div>
+                </div>
+                <div class="admin-card">
+                    <div class="admin-photo">
+                        <img src="images/zam2.jpg" alt="Григорьева Ольга Сергеевна">
+                    </div>
+                    <div class="admin-info">
+                        <h3>Григорьева Ольга Сергеевна</h3>
+                        <p class="admin-position">Заместитель директора по воспитательной работе</p>
+                        <p class="admin-experience">Стаж: 15 лет</p>
+                        <p class="admin-bio">Организатор концертов, выставок и творческих проектов. Координатор внеклассной деятельности.</p>
+                        <p class="admin-contacts">
+                            <i class="fas fa-envelope"></i> vosprab@garmoniya-school.ru<br>
+                            <i class="fas fa-phone"></i> +7 (495) 123-45-67 (доб. 103)
+                        </p>
+                    </div>
+                </div>
+                <div class="admin-card">
+                    <div class="admin-photo">
+                        <img src="images/manager.jpg" alt="Федорова Екатерина Дмитриевна">
+                    </div>
+                    <div class="admin-info">
+                        <h3>Федорова Екатерина Дмитриевна</h3>
+                        <p class="admin-position">Администратор</p>
+                        <p class="admin-experience">Стаж: 8 лет</p>
+                        <p class="admin-bio">Координатор расписания. Консультант по вопросам приема и обучения. Организатор дня открытых дверей.</p>
+                        <p class="admin-contacts">
+                            <i class="fas fa-envelope"></i> info@garmoniya-school.ru<br>
+                            <i class="fas fa-phone"></i> +7 (495) 123-45-67 (доб. 100)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Квалификация педагогов -->
+    <section class="qualification">
+        <div class="container">
+            <h2 class="section-title">Квалификация наших педагогов</h2>
+            <div class="qualification-content">
+                <div class="qualification-text">
+                    <p>В нашей школе работают только высококвалифицированные специалисты с профильным образованием и большим опытом работы с детьми.</p>
+                    <p>Все преподаватели регулярно проходят курсы повышения квалификации, участвуют в профессиональных семинарах и мастер-классах.</p>
+                    <div class="qualification-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">85%</div>
+                            <div class="stat-text">Преподавателей имеют высшую и первую квалификационную категорию</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-text">Заслуженных работников культуры и образования</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-text">Педагогов с высшим профессиональным образованием</div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Требования к педагогам</a>
+                </div>
+                <div class="qualification-image">
+                    <img src="img/new3.jpg" alt="Наши педагоги">
+                </div>
+            </div>
+            <div class="certificates">
+                <h3>Сертификаты и дипломы наших педагогов</h3>
+                <div class="certificates-slider">
+                    <div class="certificate">
+                        <img src="images/cert1.jpg" alt="Сертификат">
+                    </div>
+                    <div class="certificate">
+                        <img src="images/cert2.jpg" alt="Сертификат">
+                    </div>
+                    <div class="certificate">
+                        <img src="images/cert3.jpg" alt="Сертификат">
+                    </div>
+                    <div class="certificate">
+                        <img src="images/cert4.jpg" alt="Сертификат">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи для педагогов -->
+    <section class="teacher-contact">
+        <div class="container">
+            <div class="contact-form">
+                <h2>Хотите присоединиться к нашей команде?</h2>
+                <p>Мы всегда рады талантливым педагогам! Отправьте свое резюме и мы свяжемся с вами.</p>
+                <form id="teacherForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Телефон" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Направление преподавания</option>
+                            <option>Музыкальное искусство</option>
+                            <option>Художественное искусство</option>
+                            <option>Хореография</option>
+                            <option>Театральное искусство</option>
+                            <option>Раннее развитие</option>
+                            <option>Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Опыт работы и образование" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="file-upload">
+                            <input type="file" accept=".pdf,.doc,.docx">
+                            <span>Прикрепить резюме (PDF, DOC)</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required> Я согласен(а) на обработку персональных данных
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="teacherModal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="img/logo.jpg" alt="Логотип школы искусств"> 
+                        <h3>Гармония</h3>
+                    </div>
+                    <p>Детская школа искусств для детей от 4 до 16 лет. Развиваем творческие способности с 2010 года.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Творческая, 15</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@garmoniya-school.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-20:00, Сб: 10:00-18:00</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="activities.html">Деятельность</a></li>
+                        <li><a href="team.html">Коллектив</a></li>
+                        <li><a href="admission.html">Набор</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Подписаться на новости</h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p>Будьте в курсе наших мероприятий и новостей.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Детская школа искусств "Гармония". Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

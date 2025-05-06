@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши награды</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Segoe+UI&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #6a4c93;
+            --secondary-color: #8a5a44;
+            --accent-color: #f8c537;
+            --light-color: #f9f5ff;
+            --dark-color: #333;
+            --gray-color: #777;
+            --light-gray: #f5f5f5;
+            --white: #fff;
+            --black: #000;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-heading: 'Playfair Display', serif;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--dark-color);
+            line-height: 1.6;
+            background-color: var(--light-color);
+            padding: 40px 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 15px auto 0;
+        }
+
+        /* Стили для наград */
+        .awards-section {
+            margin-top: 60px;
+        }
+
+        .awards-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .award {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .award:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .award-year {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 3px 10px rgba(106, 76, 147, 0.3);
+        }
+
+        .award-info h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            padding-right: 70px;
+        }
+
+        .award-info p {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+
+        .award-icon {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .back-button {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 30px;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .awards-list {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+
+            .award {
+                padding: 20px;
+            }
+
+            .award-year {
+                width: 50px;
+                height: 50px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="awards-section">
+        <div class="container">
+            <h2 class="section-title">Наши награды</h2>
+            <div class="awards-list">
+                <!-- Награда 1 -->
+                <div class="award">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="award-year">2023</div>
+                    <div class="award-info">
+                        <h4>Гран-при международного конкурса "Золотая кисть"</h4>
+                        <p>Художественное отделение (возрастная категория 10-12 лет)</p>
+                    </div>
+                </div>
+
+                <!-- Награда 2 -->
+                <div class="award">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="award-year">2022</div>
+                    <div class="award-info">
+                        <h4>1 место на фестивале "Весенние голоса"</h4>
+                        <p>Вокальный ансамбль "Соловушки"</p>
+                    </div>
+                </div>
+
+                <!-- Награда 3 -->
+                <div class="award">
+                    <div class="award-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="award-year">2021</div>
+                    <div class="award-info">
+                        <h4>Лучшая школа искусств года</h4>
+                        <p>По версии регионального министерства культуры</p>
+                    </div>
+                </div>
+
+                <!-- Награда 4 -->
+                <div class="award">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="award-year">2020</div>
+                    <div class="award-info">
+                        <h4>Гран-при конкурса «Танцевальная волна»</h4>
+                        <p>Хореографический ансамбль «Радуга»</p>
+                    </div>
+                </div>
+
+                <!-- Награда 5 -->
+                <div class="award">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="award-year">2019</div>
+                    <div class="award-info">
+                        <h4>2 место на конкурсе юных пианистов</h4>
+                        <p>Иванова Мария (фортепианное отделение)</p>
+                    </div>
+                </div>
+
+                <!-- Награда 6 -->
+                <div class="award">
+                    <div class="award-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="award-year">2018</div>
+                    <div class="award-info">
+                        <h4>Золотой диплом фестиваля "Музыкальная осень"</h4>
+                        <p>Струнный квартет "Виват"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-button">
+                <a href="javascript:history.back()" class="btn">Вернуться назад</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

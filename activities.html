@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деятельность - Детская школа искусств "Гармония"</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Логотип школы искусств">
+                <h1>Гармония</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li class="active"><a href="activities.html">Деятельность</a></li>
+                    <li><a href="team.html">Коллектив</a></li>
+                    <li><a href="admission.html">Набор</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="login.html" class="login-btn">Войти</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li>Деятельность</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Направления обучения -->
+    <section class="directions">
+        <div class="container">
+            <h2 class="section-title">Направления обучения</h2>
+            <div class="directions-grid">
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Музыкальное отделение</h3>
+                    <ul>
+                        <li>Фортепиано</li>
+                        <li>Скрипка</li>
+                        <li>Виолончель</li>
+                        <li>Духовые инструменты</li>
+                        <li>Гитара</li>
+                        <li>Вокал</li>
+                    </ul>
+                    <a href="#" class="btn btn-small">Подробнее</a>
+                </div>
+
+                <!-- Модальное окно -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-text"></div>
+    </div>
+  </div>
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Художественное отделение</h3>
+                    <ul>
+                        <li>Живопись</li>
+                        <li>Графика</li>
+                        <li>Скульптура</li>
+                        <li>Керамика</li>
+                        <li>Декоративно-прикладное искусство</li>
+                    </ul>
+                    <a href="#" class="btn btn-small">Подробнее</a>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Хореографическое отделение</h3>
+                    <ul>
+                        <li>Классический танец</li>
+                        <li>Народный танец</li>
+                        <li>Современная хореография</li>
+                        <li>Балет для малышей</li>
+                    </ul>
+                    <a href="#" class="btn btn-small">Подробнее</a>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h3>Театральное отделение</h3>
+                    <ul>
+                        <li>Актерское мастерство</li>
+                        <li>Сценическая речь</li>
+                        <li>Кукольный театр</li>
+                        <li>Театральная постановка</li>
+                    </ul>
+                    <a href="#" class="btn btn-small">Подробнее</a>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Современные искусства</h3>
+                    <ul>
+                        <li>Цифровая живопись</li>
+                        <li>Фотография</li>
+                        <li>Анимация</li>
+                        <li>Видеоискусство</li>
+                    </ul>
+                    <a href="#" class="btn btn-small">Подробнее</a>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Раннее развитие</h3>
+                    <ul>
+                        <li>Музыка для малышей</li>
+                        <li>Творческая мастерская</li>
+                        <li>Ритмика</li>
+                        <li>Сказкотерапия</li>
+                    </ul>
+                    <a href="#" class="btn btn-small">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программы для разных возрастов -->
+    <section class="age-programs">
+        <div class="container">
+            <h2 class="section-title">Программы для разных возрастов</h2>
+            <div class="program-tabs">
+                <button class="program-tab active" data-age="3-6">3-6 лет</button>
+                <button class="program-tab" data-age="7-10">7-10 лет</button>
+                <button class="program-tab" data-age="11-14">11-14 лет</button>
+                <button class="program-tab" data-age="15-18">15-18 лет</button>
+            </div>
+            <div class="program-content active" id="program-3-6">
+                <div class="program-image">
+                    <img src="images/age1.jpg" alt="Занятия для детей 3-6 лет">
+                </div>
+                <div class="program-info">
+                    <h3>Программы для дошкольников</h3>
+                    <p>Наши программы для самых маленьких направлены на развитие творческих способностей, воображения и моторики через игровые формы обучения.</p>
+                    <ul>
+                        <li><strong>Музыка для малышей</strong> - развитие слуха и ритма, знакомство с инструментами</li>
+                        <li><strong>Творческая мастерская</strong> - рисование, лепка, аппликация</li>
+                        <li><strong>Ритмика и танец</strong> - развитие координации и пластики</li>
+                        <li><strong>Сказкотерапия</strong> - развитие речи и эмоционального интеллекта</li>
+                    </ul>
+                    <p>Занятия проходят в небольших группах 2 раза в неделю по 30-40 минут.</p>
+                    <a href="#" class="btn">Узнать расписание</a>
+                </div>
+            </div>
+            <div class="program-content" id="program-7-10">
+                <div class="program-image">
+                    <img src="images/age2.jpg" alt="Занятия для детей 7-10 лет">
+                </div>
+                <div class="program-info">
+                    <h3>Программы для младших школьников</h3>
+                    <p>Программы направлены на развитие творческого потенциала, освоение базовых навыков в выбранном направлении.</p>
+                    <ul>
+                        <li><strong>Основы музыкального искусства</strong> - выбор инструмента, нотная грамота</li>
+                        <li><strong>Живопись и графика</strong> - изучение техник и материалов</li>
+                        <li><strong>Хореография</strong> - классический и народный танец</li>
+                        <li><strong>Театральная студия</strong> - актерские тренинги, постановки</li>
+                    </ul>
+                    <p>Занятия 2-3 раза в неделю по 45-60 минут, индивидуальные и групповые.</p>
+                    <a href="#" class="btn">Узнать расписание</a>
+                </div>
+            </div>
+            <div class="program-content" id="program-11-14">
+                <div class="program-image">
+                    <img src="images/age3.jpg" alt="Занятия для детей 11-14 лет">
+                </div>
+                <div class="program-info">
+                    <h3>Программы для подростков</h3>
+                    <p>Углубленное изучение выбранного направления, подготовка к конкурсам и поступлению в профильные заведения.</p>
+                    <ul>
+                        <li><strong>Профессиональное музыкальное образование</strong> - расширенный курс</li>
+                        <li><strong>Академический рисунок и живопись</strong></li>
+                        <li><strong>Современная хореография</strong> - джаз, модерн, контемпорари</li>
+                        <li><strong>Театральное мастерство</strong> - сцендвижение, драматургия</li>
+                        <li><strong>Цифровые искусства</strong> - фотография, анимация</li>
+                    </ul>
+                    <p>Занятия 3-4 раза в неделю, индивидуальные и ансамблевые.</p>
+                    <a href="#" class="btn">Узнать расписание</a>
+                </div>
+            </div>
+            <div class="program-content" id="program-15-18">
+                <div class="program-image">
+                    <img src="images/age4.jpg" alt="Занятия для подростков 15-18 лет">
+                </div>
+                <div class="program-info">
+                    <h3>Программы для старших школьников</h3>
+                    <p>Профессиональная ориентация, подготовка портфолио, участие в конкурсах и выставках.</p>
+                    <ul>
+                        <li><strong>Интенсивные курсы</strong> по выбранному направлению</li>
+                        <li><strong>Подготовка к поступлению</strong> в творческие вузы и колледжи</li>
+                        <li><strong>Мастер-классы</strong> с известными деятелями искусств</li>
+                        <li><strong>Создание творческих проектов</strong> под руководством педагогов</li>
+                    </ul>
+                    <p>Гибкий график занятий, индивидуальный подход.</p>
+                    <a href="#" class="btn">Узнать расписание</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Методики преподавания -->
+<section class="teaching-methods">
+    <div class="container">
+        <h2 class="section-title">Методики преподавания</h2>
+        <div class="methods-accordion">
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    <span>Интегрированный подход</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>Мы сочетаем лучшие традиции академического образования с современными методиками, что позволяет достигать высоких результатов в обучении. Наши программы интегрируют различные виды искусств, способствуя разностороннему развитию учащихся.</p>
+                    <p>Например, на занятиях по музыке мы включаем элементы ритмики и движения, а на уроках живописи - музыкальное сопровождение для создания творческой атмосферы.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    <span>Игровые технологии</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>Для младших учащихся мы используем игровые формы обучения, которые делают процесс увлекательным и эффективным. Через игру дети осваивают сложные понятия, развивают творческое мышление и моторику.</p>
+                    <ul>
+                        <li>Музыкальные сказки и импровизации</li>
+                        <li>Творческие квесты и мастер-классы</li>
+                        <li>Интерактивные занятия с использованием мультимедиа</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    <span>Проектная деятельность</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>Старшие ученики работают над творческими проектами, что позволяет применить полученные знания на практике и развить навыки самостоятельной работы. Каждый проект завершается презентацией или выставкой.</p>
+                    <p>Примеры проектов: создание музыкального альбома, организация художественной выставки, постановка спектакля, хореографического шоу.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    <span>Индивидуальный маршрут</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>Для каждого ученика разрабатывается индивидуальная образовательная траектория с учетом его способностей, темпа обучения и творческих интересов. Регулярные отчетные мероприятия позволяют отслеживать прогресс и корректировать программу.</p>
+                    <p>Мы учитываем психологические особенности каждого возраста и создаем комфортную среду для творческого развития.</p>
+                </div>
+            </div>
+        </div>
+        <div class="methods-features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Любовь к искусству</h3>
+                <p>Главная цель - привить любовь к искусству и творчеству, а не просто научить техническим навыкам.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Командная работа</h3>
+                <p>Развитие навыков сотрудничества через ансамблевое музицирование, коллективные проекты.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Креативное мышление</h3>
+                <p>Упражнения на развитие воображения и оригинальности мышления во всех направлениях.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Творческие проекты и мероприятия -->
+    <section class="creative-projects">
+        <div class="container">
+            <h2 class="section-title">Творческие проекты и мероприятия</h2>
+            <div class="projects-tabs">
+                <button class="project-tab active" data-category="all">Все</button>
+                <button class="project-tab" data-category="concerts">Концерты</button>
+                <button class="project-tab" data-category="exhibitions">Выставки</button>
+                <button class="project-tab" data-category="festivals">Фестивали</button>
+                <button class="project-tab" data-category="competitions">Конкурсы</button>
+                <button class="project-tab" data-category="masterclasses">Мастер-классы</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="concerts">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Весенний концерт">
+                        <div class="project-date">15.05.2023</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Весенний концерт музыкального отделения</h3>
+                        <p class="project-category">Концерт</p>
+                        <p>Ежегодный отчетный концерт, в котором принимают участие все ученики музыкального отделения.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="exhibitions">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Выставка детского рисунка">
+                        <div class="project-date">22.04.2023</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>"Краски детства" - выставка учеников</h3>
+                        <p class="project-category">Выставка</p>
+                        <p>Тематическая выставка работ учащихся художественного отделения в городской галерее.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="festivals">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Танцевальный фестиваль">
+                        <div class="project-date">10.03.2023</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Международный фестиваль "Танцующий мир"</h3>
+                        <p class="project-category">Фестиваль</p>
+                        <p>Наши хореографические коллективы стали лауреатами в трех номинациях.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="competitions">
+                    <div class="project-image">
+                        <img src="images/project4.jpg" alt="Конкурс юных пианистов">
+                        <div class="project-date">18.02.2023</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Конкурс юных пианистов "Первые шаги"</h3>
+                        <p class="project-category">Конкурс</p>
+                        <p>Традиционный школьный конкурс для начинающих исполнителей.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="masterclasses">
+                    <div class="project-image">
+                        <img src="images/project5.jpg" alt="Мастер-класс по живописи">
+                        <div class="project-date">05.02.2023</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Мастер-класс по акварельной живописи</h3>
+                        <p class="project-category">Мастер-класс</p>
+                        <p>Проводит известный художник-акварелист Иван Петров для старших групп.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="concerts">
+                    <div class="project-image">
+                        <img src="images/project6.jpg" alt="Рождественский концерт">
+                        <div class="project-date">25.12.2022</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Рождественский благотворительный концерт</h3>
+                        <p class="project-category">Концерт</p>
+                        <p>Традиционное мероприятие с участием всех отделений школы.</p>
+                        <a href="#" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-archive">
+                <a href="#" class="btn">Архив мероприятий</a>
+            </div>
+        </div>
+    </section>
+    <!-- Модальное окно -->
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-text"></div>
+    </div>
+  </div>
+    <!-- Добавьте этот JavaScript код перед закрывающим тегом </body> -->
+
+
+    <!-- Наши выпускники -->
+    <section class="alumni">
+        <div class="container">
+            <h2 class="section-title">Наши выпускники</h2>
+            <div class="alumni-tabs">
+                <button class="alumni-tab active" data-field="all">Все</button>
+                <button class="alumni-tab" data-field="music">Музыка</button>
+                <button class="alumni-tab" data-field="art">Искусство</button>
+                <button class="alumni-tab" data-field="dance">Танец</button>
+                <button class="alumni-tab" data-field="theater">Театр</button>
+                
+            </div>
+            <div class="alumni-grid">
+                <div class="alumni-card" data-field="music">
+                    <div class="alumni-photo">
+                        <img src="images/alumni1.jpg" alt="Анна Смирнова">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Анна Смирнова</h3>
+                        <p class="alumni-year">Выпуск 2018</p>
+                        <p class="alumni-field">Фортепианное отделение</p>
+                        <p>Студентка Московской консерватории. Лауреат международных конкурсов в Германии и Франции.</p>
+                    </div>
+                </div>
+                <div class="alumni-card" data-field="art">
+                    <div class="alumni-photo">
+                        <img src="images/alumni2.jpg" alt="Дмитрий Иванов">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Дмитрий Иванов</h3>
+                        <p class="alumni-year">Выпуск 2016</p>
+                        <p class="alumni-field">Художественное отделение</p>
+                        <p>Член Союза художников России. Участник международных выставок современного искусства.</p>
+                    </div>
+                </div>
+                <div class="alumni-card" data-field="dance">
+                    <div class="alumni-photo">
+                        <img src="images/alumni3.jpg" alt="Екатерина Петрова">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Екатерина Петрова</h3>
+                        <p class="alumni-year">Выпуск 2019</p>
+                        <p class="alumni-field">Хореографическое отделение</p>
+                        <p>Солистка балета в Мариинском театре. Участница гастролей по Европе и Азии.</p>
+                    </div>
+                </div>
+                <div class="alumni-card" data-field="theater">
+                    <div class="alumni-photo">
+                        <img src="images/alumni4.jpg" alt="Артем Кузнецов">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Артем Кузнецов</h3>
+                        <p class="alumni-year">Выпуск 2017</p>
+                        <p class="alumni-field">Театральное отделение</p>
+                        <p>Актер театра и кино. Известен по ролям в сериалах "Улицы" и "Городские легенды".</p>
+                    </div>
+                </div>
+                <div class="alumni-card" data-field="music">
+                    <div class="alumni-photo">
+                        <img src="images/alumni5.jpg" alt="Мария Волкова">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Мария Волкова</h3>
+                        <p class="alumni-year">Выпуск 2020</p>
+                        <p class="alumni-field">Вокальное отделение</p>
+                        <p>Финалистка шоу "Голос.Дети". Выпустила собственный альбом авторских песен.</p>
+                    </div>
+                </div>
+                <div class="alumni-card" data-field="art">
+                    <div class="alumni-photo">
+                        <img src="images/alumni6.jpg" alt="Александр Новиков">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>Александр Новиков</h3>
+                        <p class="alumni-year">Выпуск 2015</p>
+                        <p class="alumni-field">Художественное отделение</p>
+                        <p>Основатель студии цифрового искусства. Работает с крупными брендами над рекламными кампаниями.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-more">
+                <a href="#" class="btn">Все выпускники</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="img/logo.jpg" alt="Логотип школы искусств">
+                        <h3>Гармония</h3>
+                    </div>
+                    <p>Детская школа искусств для детей от 4 до 16 лет. Развиваем творческие способности с 2010 года.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Творческая, 15</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@garmoniya-school.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-20:00, Сб: 10:00-18:00</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="activities.html">Деятельность</a></li>
+                        <li><a href="team.html">Коллектив</a></li>
+                        <li><a href="admission.html">Набор</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Подписаться на новости</h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p>Будьте в курсе наших мероприятий и новостей.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Детская школа искусств "Гармония". Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

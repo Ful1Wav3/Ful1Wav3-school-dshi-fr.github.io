@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея работ наших учеников</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Segoe+UI&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6a4c93;
+            --secondary-color: #8a5a44;
+            --accent-color: #f8c537;
+            --light-color: #f9f5ff;
+            --dark-color: #333;
+            --gray-color: #777;
+            --light-gray: #f5f5f5;
+            --white: #fff;
+            --black: #000;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-heading: 'Playfair Display', serif;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--dark-color);
+            line-height: 1.6;
+            background-color: var(--light-color);
+            padding: 40px 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 15px auto 0;
+        }
+
+        /* Стили галереи */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            aspect-ratio: 1/1;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            padding: 20px;
+            color: var(--white);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        .gallery-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 30px;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+    /* Кнопка "Назад" */
+            .back-button {
+            text-align: center;
+            margin-top: 40px;
+                }
+        .btn:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 15px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Галерея работ -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Галерея работ наших учеников</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/6a4c93/ffffff?text=Акварель" alt="Детский рисунок">
+                    <div class="gallery-overlay">
+                        <p>Акварель, 8 лет</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/8a5a44/ffffff?text=Гуашь" alt="Детский рисунок">
+                    <div class="gallery-overlay">
+                        <p>Гуашь, 10 лет</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/f8c537/333333?text=Скрипка" alt="Юный музыкант">
+                    <div class="gallery-overlay">
+                        <p>Ученик на скрипке</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/f9f5ff/6a4c93?text=Танцы" alt="Танцевальный номер">
+                    <div class="gallery-overlay">
+                        <p>Танцевальный ансамбль</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/f9f5ff/6a4c93?text=Танцы" alt="Танцевальный номер">
+                    <div class="gallery-overlay">
+                        <p>Танцевальный ансамбль</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/f9f5ff/6a4c93?text=Танцы" alt="Танцевальный номер">
+                    <div class="gallery-overlay">
+                        <p>Танцевальный ансамбль</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/f9f5ff/6a4c93?text=Танцы" alt="Танцевальный номер">
+                    <div class="gallery-overlay">
+                        <p>Танцевальный ансамбль</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/f9f5ff/6a4c93?text=Танцы" alt="Танцевальный номер">
+                    <div class="gallery-overlay">
+                        <p>Танцевальный ансамбль</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/f9f5ff/6a4c93?text=Танцы" alt="Танцевальный номер">
+                    <div class="gallery-overlay">
+                        <p>Танцевальный ансамбль</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/f9f5ff/6a4c93?text=Танцы" alt="Танцевальный номер">
+                    <div class="gallery-overlay">
+                        <p>Танцевальный ансамбль</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/f9f5ff/6a4c93?text=Танцы" alt="Танцевальный номер">
+                    <div class="gallery-overlay">
+                        <p>Танцевальный ансамбль</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/ffffff/8a5a44?text=Керамика" alt="Керамика">
+                    <div class="gallery-overlay">
+                        <p>Глиняные изделия</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/333333/f8c537?text=Театр" alt="Театральная постановка">
+                    <div class="gallery-overlay">
+                        <p>Театральная студия</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/6a4c93/f8c537?text=Рисунок" alt="Детский рисунок">
+                    <div class="gallery-overlay">
+                        <p>Карандашный рисунок, 9 лет</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/600x600/8a5a44/f9f5ff?text=Хор" alt="Хоровое пение">
+                    <div class="gallery-overlay">
+                        <p>Хоровое выступление</p>
+                    </div>
+                </div>
+            </div>
+            <div class="back-button">
+                <a href="javascript:history.back()" class="btn">Вернуться назад</a>
+            </div>
+        
+    </section>
+</body>
+</html>
